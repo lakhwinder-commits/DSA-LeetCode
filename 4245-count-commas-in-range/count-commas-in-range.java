@@ -2,9 +2,9 @@ class Solution {
     public int countCommas(long n) {
         long count = 0;
 
-        for (long i = 1000; i <= n; i *= 1000) 
+        for (long i = 1000; i <= n; i *= 1000) {
             count =count+ n - i + 1;
-        
+        }
 
         return (int) count;
     }
